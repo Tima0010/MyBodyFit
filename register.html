@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBodyFit</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<div class="form">
+
+    <form action="regis.php" class="session-form" method="post">
+
+    <h1>Регистрация</h1>
+    <div class="input-form">
+        <input type="text" id="user-name" placeholder="ФИО" name="name" minlength="6" maxlength="30">
+    </div>
+    <div class="input-form">
+        <input onkeypress="return (event.charCode > 64 &&
+      event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" type ="text" id="user-login" placeholder="Логин" name="login" minlength="6" maxlength="30">
+    </div>
+    <div class="input-form">
+        <input type="password" id="user-password" placeholder="Пароль" name="password" minlength="6" maxlength="30">
+    </div>
+    <div class="input-form">
+        <input type="password" id="user-password-repeat" placeholder="Повторите пароль" name="passwordSecond" minlength="6" maxlength="30">
+    </div>
+    <div class="input-form">
+        <input type="email" id="user-mail" placeholder="E-mail" name="email" minlength="6" maxlength="30">
+    </div>
+
+    <div class="input-form">
+    <button type="submit"  value="submit" name="reg_user">Регистрация</button>
+    </div>
+
+        <a href="login.html" class="forget">Уже есть аккаунт?</a>
+
+    </form>
+</div>
+
+</body>
+</html>

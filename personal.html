@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang=ru>
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="personal.css"><!--connecting with css file-->
+    <title>MyBodyFit Blog</title>
+</head>
+<body>
+<!-------------------HEADER-------------------->
+<!--------------------------------------------->
+
+<header class="header">
+    <div class="container">
+        <div class="header_inner">
+            <nav class="nav"> <!--navigation links at the top of the page-->
+                <a class="nav_link" href="Index.html">Main</a><!--navigation link to main page-->
+                <a class="nav_link" href="workout.html">All programs</a><!--link to programs page-->
+                <a class="nav_link" href="nutrition.html">Diet</a><!--link to diet page-->
+                <a class="nav_link" href="blog.html">Blog</a><!--link to blog page-->
+                <a class="nav_link" href="vip.html">VIP</a><!--link to VIP's page-->
+            </nav>
+            <div>
+                <div>
+                    <a class="btn_l" href="personal.html">Personal Information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<!-------------------INTRO--------------------->
+<!--------------------------------------------->
+
+<div class="intro">
+    <div class="container">
+        <div class="intro_inner"><!--intro block (first block people see)-->
+            <h1 class="into_title">Your Profile</h1><!--Text (name of company) in intro part-->
+        </div>
+        <div>
+            <h2 class="into_subtitle">Here is a place for your fantasy! You can save your before and after photos, create image galleries, and also create recordings and notes. The functionality of this page depends entirely on you</h2>
+        </div>
+        <div>
+            <img class="intro_logo" src="images/Logosmall.png">
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--------------------BLOG--------------------->
+<!--------------------------------------------->
+
+<div class="blog">
+    <div class="container">
+        <div class="blog_title">
+            <p class="blog_text">Create a note  +</p>
+            <p class="blog_text">Create image gallery  +</p>
+            <p class="blog_text">Look for other templates...</p>
+        </div>
+    </div>
+</div>
+
+
+<table border="2" style="width: 50%; margin-left: 25%; text-align: center; margin-bottom: 5%" id="table" >
+    <thead>
+        <input type="text" placeholder="Search" style="width: 50%; margin-left: 25%; text-align: center;" id="search-text" onkeyup="tableSearch()">
+        <tr>
+            <th>File</th>
+            <th>Size</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Программа</td>
+            <td>VIP</td>
+            <td>Питание</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Вернуть</td>
+            <td>Заказать</td>
+            <td>Купить</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+
+
+<div class="more">
+    <h3 class="more_title">“How to use personal profile<br> page” - tutorial</h3>
+    <p class="more_text">Your web site has very elastic personal profile page. In order to get<br> more information press button “More”</p>
+    <p class="btn_r">More</p>
+</div>
+
+
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+    table {
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 2px solid black;
+    }
+</style>
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="">Materials</a>
+        </li>
+        <li>
+            <a href="calendar.php">Booking Calendar</a>
+        </li>
+        <li>
+            <a href="logout.php" class="btn btn-primary btn-large">Logout</a>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+
+<!----------------Footer----------------->
+<!--------------------------------------------->
+
+<footer>
+    <nav> <!--navigation links in the bottom of the site-->
+        <div class="nav_links_bottom">
+            <a class="nav_link" href="Index.html">Main</a><!--navigation link to main page-->
+            <a class="nav_link" href="workout.html">All programs</a><!--link to programs page-->
+            <a class="nav_link" href="nutrition.html">Diet</a><!--link to diet page-->
+            <a class="nav_link" href="blog.html">Blog</a><!--link to blog page-->
+            <a class="nav_link" href="vip.html">VIP</a><!--link to VIP's page-->
+        </div>
+    </nav>
+    <div class="logo"><img class="graficlogo" src="images/Logo.png" width="600px"></div> <!--Logo in the bottom of the page-->
+    <div class="footer_text"><p>© Firness Training & Co Corporation. "Fitness Training & Co Corporation" and Logo and photos and videos are an trademarks of the "Firness Training & Co Corporation" company. Please visit our service centre for more information</p></div>
+</footer>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
