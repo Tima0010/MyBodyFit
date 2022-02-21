@@ -21,6 +21,21 @@ p {
 }
 
 
+/* Bootstrap
+=================================*/
+
+.bootstrap_button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+
+    padding-bottom: 5%;
+}
+
+.bootstrap_nav{
+    padding-right: 40%;
+}
+
 
 /* Container
 =================================*/
