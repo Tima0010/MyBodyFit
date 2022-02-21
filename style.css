@@ -20,6 +20,43 @@ p {
     margin: 0 0 10px 0;
 }
 
+#button {   
+    display: inline-block;   
+    background-color: #ff3a3a;   
+    width: 50px;   
+    height: 50px;   
+    text-align: center;   
+    border-radius: 4px;   
+    margin: 30px;   
+    position: fixed;   
+    bottom: 30px;   
+    right: 30px;   
+    transition: background-color .3s;   
+    z-index: 1000; 
+    display: none;
+ } 
+ .show {
+     display: block;
+ }
+ #button:hover {   
+    cursor: pointer;   
+    background-color: #333; 
+ } 
+ #button:active {   
+    background-color: #555; 
+ } 
+
+
+ #button::after {
+    content: "\f077";
+    /* font-family: FontAwesome; */
+    /* 'Raleway', sans-serif */
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff; 
+ } 
 
 
 /* Container
@@ -65,11 +102,10 @@ p {
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
-
 }
 
 .nav_link {
-    margin-right: 70px;
+    margin-right: 10%;
     color: #ffffff;
     text-decoration: none;
     opacity: .65;
@@ -79,7 +115,7 @@ p {
 }
 
 .nav_link:first-child {
-    margin-left: 20px;
+    margin-left: 10%;
 }
 
 
@@ -236,9 +272,6 @@ p {
 /* Coach
 =================================*/
 
-.team {
-}
-
 .team_item {
     width: 25%;
     float: left;
@@ -324,24 +357,6 @@ footer a{
     font-size: 14px;
     color: gray;
 }
-/*=============WHITE============*/
-/*==============================*/
-
-/*=============WHITE============*/
-/*==============================*/
-
-/*=============WHITE============*/
-/*==============================*/
-
-/*=============WHITE============*/
-/*==============================*/
-
-/*=============WHITE============*/
-/*==============================*/
-
-/*=============WHITE============*/
-/*==============================*/
-
 /*=============WHITE============*/
 /*==============================*/
 

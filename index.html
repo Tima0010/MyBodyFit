@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang=ru>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -11,19 +12,53 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"><!--connecting with css file-->
+    <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <title>MyBodyFit</title>
 </head>
 <body>
 
+
+<div>
+    <audio id="audio">
+        <source src="audio/NEFFEX - Careless (mp3profy.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="playPauseBTN" onclick="playPause()">Play &#9658;</button>
+    &nbsp;
+    &nbsp;
+    <button>Stop &#9611;</button>
+</div>
+
+<script>
+    var audio = document.getElementById('audio');
+    var playPauseBTN = document.getElementById('playPauseBTN');
+    var count = 0;
+
+    function playPause(){
+        if(count == 0){
+            count = 1;
+            audio.play();
+        } else{
+            count = 0;
+            audio.pause();
+        }
+    }
+</script>
+
+
 <!-------------------HEADER-------------------->
 <!--------------------------------------------->
+
 
 <header class="header">
     <div class="container">
         <div class="header_inner">
             <nav class="nav"> <!--navigation links at the top of the page-->
                 <a class="nav_link" href="index.html" style="color: #ff3a3a">Main</a><!--navigation link to main page-->
-                <a class="nav_link" href="workout.html">All programs</a><!--link to programs page-->
+                <a class="nav_link" href="workout.html">Workout</a><!--link to programs page-->
                 <a class="nav_link" href="nutrition.html">Diet</a><!--link to diet page-->
                 <a class="nav_link" href="blog.html">Blog</a><!--link to blog page-->
                 <a class="nav_link" href="vip.html">VIP</a><!--link to VIP's page-->
@@ -39,6 +74,7 @@
 
 <!-------------------INTRO--------------------->
 <!--------------------------------------------->
+
 
 <div class="intro">
     <div class="container">
@@ -59,6 +95,7 @@
 
 <!--------------------COACH-------------------->
 <!--------------------------------------------->
+
 
 <div class="team">
         <div class="team_inner"><!--part with all trainings on the website-->
@@ -94,10 +131,45 @@
         </div>
 </div>
 
+
 <img src="images/Quote.png" width="100%"> <!--setting background image-->
+
 
 <div class="line"></div>
 <div class="line_2"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+
+
+<script> 
+
+    jQuery(document).ready(function() {
+      var btn = $('#button');  
+      $(window).scroll(function() {     
+        if ($(window).scrollTop() > 300) {
+           btn.addClass('show');
+         } else {
+           btn.removeClass('show');
+         }
+       });
+       btn.on('click', function(e) {
+         e.preventDefault();
+         $('html, body').animate({scrollTop:0}, '300');
+       });
+    });
+    </script>
+
+<a id="button"></a>
+
 
 </body>
 
@@ -116,20 +188,4 @@
     <div class="footer_text"><p>&copy; Firness Training & Co Corporation. "Fitness Training & Co Corporation" and Logo and photos and videos are an trademarks of the "Firness Training & Co Corporation" company. Please visit our service centre for more information</p></div>
 </footer>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
